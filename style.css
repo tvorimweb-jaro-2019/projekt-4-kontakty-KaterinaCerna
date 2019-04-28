@@ -8,3 +8,59 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+h1 {
+	text-align: center;
+}
+
+ img {
+	 border-radius: 50%;
+	 float: left;
+	 margin-right: 20px;
+ }
+
+.tym {
+display: flex;
+justify-content: flex-start;
+align-items: stretch;
+flex-wrap: wrap;
+}
+
+.clenka{
+	border-color: grey;
+	border-radius: 1em;
+	border:1px;
+	border-style: solid;
+	box-shadow: 0 2px 4px rgba (0, 255, 255, 0.15);
+	text-align: center;
+	padding: 20px;
+	margin: 10px;
+	flex-grow: 1;
+	min-width: 250px;
+}
+
+@media (min-with: 540px) {
+	.tym {
+		display:flex;
+		flex-wrap: wrap;
+	}
+	.clenka{
+		text-align: left;
+		width: calc ( (100% - 40px)/2);
+	}
+	}
+
+@media (min-width: 960px) {
+ img{
+	 float:none;
+ }
+ .tym{
+	 display: flex;
+	 flex-wrap: no-wrap;
+ }
+ .clenka {
+	 display:block;
+	 text-align: centre;
+	 width: calc ( (100% - 80px) / 4);
+ }
+}
